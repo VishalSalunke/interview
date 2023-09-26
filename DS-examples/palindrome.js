@@ -1,10 +1,5 @@
-const { validString, validateNumber } = require("../utility");
-
 const palindrome = (input) => {
   console.log(`Checking if the -> ${input} <- is a palindrome`);
-  if (!validString(input) && !validateNumber(input)) {
-    return "Please provide valid input";
-  }
 
   let str = input;
   if (typeof input === "number") {

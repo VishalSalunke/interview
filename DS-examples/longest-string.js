@@ -1,10 +1,6 @@
 // find the longest substring without repeating character
 
-const { validString } = require("../utility");
-
 const longestSubString = (str) => {
-  if (!validString(str)) return "Please enter valid string";
-
   const currentString = [];
   let maxSubStringLenth = 0;
 

@@ -1,10 +1,6 @@
 // Given in array of integers find two number such that they add up to specific target
-const { validateArray } = require("../utility");
 
 const twoSum = (arr, target) => {
-  if (!validateArray(arr)) {
-    return console.log("Please enter valid input");
-  }
   const tempObj = {};
   for (let i = 0; i < arr.length; i++) {
     const complement = target - arr[i];

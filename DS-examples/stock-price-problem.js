@@ -1,12 +1,6 @@
 //Consider a given array [7,1,5,3,6,4] representing the stock prices of a particular company for the next 6 days. For instance, today's price is 7, tomorrow's is 1, and so on, with the price being 4 on the 6th day. Your task is to find the maximum profit that can be earned from buying and selling stocks within these 6 days. Additionally, please display both the buy price and the sale price to achieve this maximum profit
 
-const { validateArray } = require("../utility");
-
 const guessStockPrice = (stockPrices) => {
-  if (!validateArray(stockPrices)) {
-    return console.log("Please enter valid input");
-  }
-
   let maxDifference = 0;
   let orderDetails = {};
 
